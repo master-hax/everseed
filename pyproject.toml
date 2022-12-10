@@ -16,6 +16,11 @@ classifiers = [
     "License :: OSI Approved :: MIT License",
     "Operating System :: OS Independent",
 ]
+dependencies = [
+  "pyrosimple==2.4.0",
+  "prompt_toolkit==3.0.36",
+  "bencode.py==4.0.0",
+]
 
 [project.urls]
 "Homepage" = "https://github.com/pypa/sampleproject"
@@ -23,12 +28,5 @@ classifiers = [
 
 [tool]
 [tool.hatch]
-
-dependencies = [
-  "pyrosimple==2.4.0",
-  "prompt_toolkit==3.0.36",
-  "bencode.py==4.0.0",
-]
-
 [tool.hatch.build.targets.wheel]
 packages = ["src/everseed"]
